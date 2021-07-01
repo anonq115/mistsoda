@@ -1,0 +1,412 @@
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+
+    vertical-align: baseline;
+}
+
+html {
+    box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+body {
+    background-color: #F8F8F6;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+.mistsodalogoblue {
+    fill: var(--svg-logo-on-background);
+}
+
+
+.mistsodalogoblue:hover {
+    fill: var(--svg-logo-hover-on-background);
+}
+#on-background-color{
+
+
+    color: var( --nav-links-on-background);
+}
+#on-background-color:hover{
+
+
+    color: var(  --nav-links-hover-on-background);
+}
+/*-=-==--=-==--=-=-==-=--=-==-=-=-=-=-=-=-image stylingV1=--=-=-=--=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=*/
+
+.outerhook-illus {
+
+    position: relative;
+    height: 100%;
+    overflow: hidden;
+    background: #644EEF;
+}
+
+.innerhook-illus {
+    margin: 0 auto;
+    position: absolute;
+    max-width: 1350px;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+
+    display: grid;
+    grid-template-columns: 400px;
+    grid-template-rows: 1fr;
+    justify-content: center;
+    align-items: center;
+}
+
+.innerhook-illus img {
+    width: 100%;
+    height: 100%;
+    opacity: 0.80;
+    padding: 1.86rem 1rem 0.80rem 1rem;
+
+}
+
+.outerNav-illu {
+    margin: 0 auto 195px auto;
+    padding: 0 0 0 0;
+}
+
+
+/*-=-==--=-==--=-=-==-=--=-==-=-=-=-=-=-=-image stylingV2=--=-=-=--=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=*/
+.illusv2image {
+    margin: 11px 0 0 0;
+    width: 100%;
+    height: 265px;
+}
+
+.illusv2image img {
+
+    height: 100%;
+    width: 100%;
+}
+
+
+/*<<><><><><><<><><><>--------------------------------------------------<<>><<><><>><><><*/
+
+.news-main {
+    position: relative;
+}
+
+.outernews-content {
+    margin: 0 auto;
+    padding: 0;
+
+}
+
+.innernews-content {
+    margin: 0.90rem auto 0 auto;
+    padding: 0 40px;
+    max-width: 762.61px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+}
+
+.reading-content {
+    margin: 0 auto;
+    padding: 0 1.7px
+}
+
+.reading-content h1 {
+    font-size: 3rem;
+    font-weight: 700;
+    color: #000000;
+    text-align: left;
+    line-height: 1.13;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.smallhookdesc {
+    line-height: 1.24;
+    margin-top: 11px;
+    color: #6A6A6A;
+    font-size: 1.45rem;
+    font-style: italic;
+    font-weight: 400;
+
+}
+
+.author-publication_time {
+
+    display: block;
+    margin-top: 11px;
+    color: #8888A7;
+    font-size: 0.85rem;
+    font-weight: 400;
+    
+}
+
+
+
+.author-publication_time span:nth-child(1) {
+    color: #7460EF;
+}
+
+
+
+/*<<<<<<<<*/
+.on-read-hook {
+    margin: 2.25rem 0 0 0;
+    color: #222;
+    font-size: 1.35rem;
+    font-weight: 400;
+    line-height: 1.618;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.drop-cap::first-letter {
+
+    font-size: 6.1rem;
+
+    float: left;
+    margin: 0;
+    padding: 0;
+    line-height: 0.855;
+
+    color: var(--color-palette-blues-5-lightdark);
+    margin: 0 0.1em 0 0;
+    padding: 0.986rem 0 0 0;
+}
+
+/*
+    font-size: 4.5em;
+    float: left;
+    margin:0;
+    padding: 0; line-height: 0.65;
+    vertical-align: middle;initial-letter:  1.618;
+    color:#644EEF;
+*/
+
+
+
+
+
+/*=-=-=-=--=-=-====-=-=---=-=-=-=-==--=-=-==-=--==--==--==-=-=-=-=------------*/
+/*=-=-=-=--=-=-====-=-=---=-=-=-=-==--=-=-==-=--==--==--==-=-=-=-=------------*/
+.on-readparagraphs {
+    margin: 0.55rem 0 0 0;
+    font-size: 18.65px;
+    font-weight: 400;
+    color: #454545;
+    line-height: 1.618;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.bigsubheader-sections-seperators {
+    font-weight: bold;
+    font-size: 1.55rem;
+    font-family: 'Source Sans Pro', sans-serif;
+    margin: 1.75rem 0 0 0;
+}
+
+.article-link-styles {
+    text-decoration: none;
+    color: #644EEF;
+
+    font-style: oblique;
+}
+
+.article-link-for-image {
+    display: inline-block;
+    width: 100%;
+    margin: 1.35rem 0;
+}
+
+.figure-container-for-image {
+    margin: 1.45rem 0 1rem 0;
+    width: 100%;
+
+
+
+
+    position: relative;
+}
+
+.images-in-article {
+    display: block;
+    width: 100%;
+    position: relative;
+    height: 280px;
+}
+
+.description-for-image {
+    font-size: 0.9rem;
+    font-weight: 400;
+    font-family: Arial, Helvetica, sans-serif;
+
+    display: block;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    pointer-events: none;
+    overflow: hidden;
+    z-index: 1;
+    display: block;
+    margin: 0;
+    padding: 40px 12px 8px;
+    border: none;
+    width: 100%;
+    max-width: 100%;
+    max-height: 100%;
+    text-align: left;
+    color: #fff;
+
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.534), rgba(0, 0, 0, .3) 60%, transparent);
+}
+
+.list-of-resources-4-articles {
+    list-style: upper-alpha;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+
+    margin: 0.75rem 0 0 0.35rem;
+
+}
+
+.actual-li::before {
+    content: "•";
+    color: #1e4470c7;
+    margin: 0 0.85rem 0 0;
+}
+
+.actual-li {
+    font-size: 1.35rem;
+    font-family: Arial, Helvetica, sans-serif;
+    list-style: none;
+}
+
+.actual-li:not(:last-child) {
+
+    margin: 0 0 0.75rem 0;
+}
+
+
+
+
+
+
+.article-list-links {
+    text-decoration: none;
+    color: #4c9dfa;
+    font-style: italic;
+}
+
+.article-list-links:hover {
+    text-decoration-line: underline;
+    color: rgb(61, 61, 201);
+}
+
+.text-qouting-source {
+    font-style: italic;
+    color: var(--color-palette-blues-5-lightdark);
+    font-weight: 400;
+}
+
+.credible-source-link {
+    text-decoration: none;
+    font-weight: 600;
+    color: var(--color-palette-blues-5-lightdark);
+}
+
+/*=-=-=-=--=-=-====-=-=---=-=-=-=-==--=-=-==-=--=*/
+.blank-qouted-text {
+    font-style: italic;
+    color: var(--color-palette-blues-6-pink);
+}

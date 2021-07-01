@@ -1,0 +1,757 @@
+html {
+    box-sizing: border-box;
+    font-size: 16px;
+    text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+
+*,
+*:before,
+*:after {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    font-size: 16px;
+    text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+
+
+}
+
+body {
+
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font-size: 16px;
+}
+
+:root {
+    --body_color: #FFFFFF;
+    --menuicon_color: #606060;
+    --menuicon_barthiccness: 0.227rem;
+    --color-palette-blues-1-base:#644EEF;
+    --color-palette-blues-2-light:#9d7cff;
+    --color-palette-blues-3-dark:#1c23bb;
+    --color-palette-blues-4-extralight:#458DF8;
+    --color-palette-blues-5-lightdark:#3D52D9;
+    --color-palette-blues-6-pink:#E845FF;
+
+
+    --svg-logo-on-background:#fff;
+    --svg-logo-hover-on-background:rgb(212, 205, 248);
+    --nav-links-on-background:#fff;
+    --nav-links-hover-on-background:rgb(212, 205, 248);
+
+    /*----- MAIN LINKS STYLES ---- */
+
+    /*----  HAMBURGER STYLES  -------*/
+
+    --menuicon_color: #606060;
+    --menuicon_barthiccness: 0.227rem;
+    /*  or this 0.1875rem */
+
+
+    /*----- MAIN LINKS STYLES ---- */
+
+    --color-menu: #606060;
+
+    /*----  HAMBURGER STYLES  -------*/
+
+    --menuicon_color: #606060;
+    --menuicon_barthiccness: 0.227rem;
+
+    /*--colors needed for website----
+    stripe colors:: 
+    
+    top:: 
+    
+    #04E8B9 - left stripe - whitegreen
+    #4517A8 - right stripe - purple  
+
+    right::
+    #87BBFD -  first stripe - lightbluish
+    #04E8B9 -  second stripe - whitegreen
+    #6772E5 -  third stripe - blue 
+    #D1FFFF -  fourth stripe - whiteblue
+    #424770 -  fifth stripe  - navyblue 
+
+
+    left :: 
+    #C4F0FF - first stripe - whiteblue  
+    #04E8B9 - second stripe -whitegreen  
+    #424770 - third stripe - navyblue  
+
+    
+    ---------------------------------------------------
+       
+     //body color:: #FFFFFF  - white
+
+    //header title  hook header title color --- :: #32325D -dark blue
+
+    //titles for boxes ::#32325d; dark blue 
+    
+    
+  -----------------------------------------------------------------------------------------
+    //whiteblue line that seperates top section from gradient articles
+    line:: #D1FFFF
+
+
+    
+    //fonts/text on colored background :: #fff - white font
+    
+    ----------------------------------------------
+
+    //big dark blue header
+    //color for text ::  #fff - white font
+   -----------------------------------------------
+
+    big descriptions why and who this website is for
+
+    color text on white backgrounds :: #525f7f; ligther dark blue 
+
+--------------------------------------------------
+footer backdrop color - #4517A8 - purple
+font-family: 'Open Sans', sans-serif;
+font-family: 'Roboto', sans-serif;
+    */
+    --fontfamily4_links: 'Roboto', sans-serif;
+    --grid-gap: 1.9375rem;
+    --margintop4_titlesunderboxes: 0.625rem 0 0 0;
+    --padding_seperators: 65px 0 0 0;
+    --fontfamily4_titles: 'Open Sans', sans-serif;
+    --fontsize4_Titles: 21px;
+    --letterspacing4_Titles: .025rem;
+    --color4_titles: #32325d;
+
+    --fontsize4_descriptions: 20px;
+    --fontweight4_descriptions: 300;
+    --color4_descriptions: #424770;
+
+    --lineheight4_titlesanddescs: 28px;
+    --lineheight4_textonwhitebackground: 32px;
+
+    --fontsize4_subdescriptions: 17px;
+    --color4_subdescriptions: #525f7f;
+
+
+    --color4_oncoloredbackgrounds: #fff;
+    --staticbox_shadow: 0 13px 27px -5px rgba(50, 50, 93, .25), 0 8px 16px -8px rgba(0, 0, 0, .3), 0 -6px 16px -6px rgba(0, 0, 0, .025);
+
+    --hoverbox_shadow: 0 30px 60px -12px rgba(50, 50, 93, .25), 0 18px 36px -18px rgba(0, 0, 0, .3), 0 -12px 36px -8px rgba(0, 0, 0, .025);
+
+    --flatborder-radius: 8px;
+}
+
+/*--><><><><><><><><><><><><><><><><><><><><><><><><><><--*/
+
+/*-------------------mobile#1st----------------------------*/
+.hoverstate:hover {
+    fill: #1c23bb;
+}
+
+.outerNav {
+    margin: 0 auto;
+    padding: 0;
+
+    top: 0;
+    left: 0;
+    max-width: 100%;
+    min-height: 10px;
+    max-height: 250px;
+
+}
+
+.innerNav {
+    position: relative;
+    margin: 0 auto;
+    padding: 0;
+    max-width: 1590px;
+    height: 75px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-items: center;
+
+}
+
+.mobileMenu {
+    position: relative;
+    margin: 0;
+    padding: 0 20px;
+    height: 35px;
+    width: 100%;
+
+
+}
+
+.innerNav a {
+
+    position: relative;
+    top: 0;
+    left: 0;
+    margin: 0;
+    padding: 0 20px;
+    max-height: 95%;
+    height: 45px;
+}
+
+
+.mistsodalogo {
+
+    position: relative;
+    display: block;
+    width: 110px;
+    height: auto;
+    margin: 0 auto;
+    padding: 0;
+}
+
+
+
+/*------------------------------------------------------*/
+.globalFooter {
+    margin: 0 auto;
+    padding: 0;
+    position: relative;
+    max-width: 1590px;
+}
+
+.innerFooterNav {
+    position: relative;
+    margin: 30px 0 0 0;
+    padding: 15px 0 0 0;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+
+}
+
+.container-footer {
+
+    position: relative;
+    margin: 0;
+    padding: 0 20px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: #4517A8;
+    height: 85px;
+}
+
+.footerlist {
+
+    margin: 0 auto;
+    padding: 15px 0 10px 0;
+    width: 100%;
+    position: relative;
+    display: flex;
+
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    justify-items: center;
+    list-style-type: none;
+
+}
+
+.footerlist li {
+    position: relative;
+    margin: 0;
+    padding: 0;
+}
+
+.footerlist li a {
+    font-size: 14px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: .025em;
+    margin: 0 0 5px;
+    color: #fff;
+    text-decoration: none;
+    font-family: var(--fontfamily4_links);
+    font-weight: 500;
+}
+
+.mistsodasection {
+    margin: 0 auto;
+    padding: 0;
+  
+    position: relative;
+    display: flex;
+
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-end;
+    list-style-type: none;
+
+
+}
+
+.mistsodasection li {
+    margin: 0.5rem 0 0 0;
+    padding: 0;
+    color: #aab7c4;
+
+    font-weight: 300;
+}
+
+/*------------------------------------------------------*/
+.globalFooter {
+    margin: 0 auto;
+    padding: 0;
+    position: relative;
+    max-width: 1590px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    width: 100%;
+    min-height: 144px;
+    background-color: #644EEF;
+   
+}
+
+.innerFooterNav {
+    position: relative;
+    margin: 30px 0 0 0;
+    padding: 15px 0 0 0;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+
+}
+
+.container-footer { 
+
+    position: relative;
+    margin: 0;
+    padding: 0 20px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: #644EEF;
+    height: 85px;
+}
+
+.footerlist {
+
+    margin: 0 auto;
+    padding: 15px 0 10px 0;
+    width: 100%;
+    position: relative;
+    display: flex;
+
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    justify-items: center;
+    list-style-type: none;
+
+}
+
+.footerlist li {
+    flex-wrap: wrap;
+    position: relative;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    
+}
+
+.footerlist li a {
+    font-size: 14px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: .025em;
+    margin: 0 0 5px;
+    color: #fff;
+    text-decoration: none;
+    font-family: var(--fontfamily4_links);
+    font-weight: 500;
+
+}
+
+.mistsodasection {
+    margin: 0 auto;
+    padding: 0;
+   
+    position: relative;
+    display: flex;
+
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    list-style-type: none;
+
+
+}
+
+.mistsodasection li {
+    margin: 0.5rem 0 0 0;
+    padding: 0;
+    color: #aab7c4;
+
+    font-weight: 300;
+}
+
+.outernavlinks {
+    display: none;
+}
+
+
+
+/*-------------------mobile#1st----------------------------*/
+
+
+/*<><><><><><<><><><><><>><><<><><><>><*/
+.mobileMenu {
+    position: relative;
+    margin: 0;
+    padding: 0;
+    height: 35px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+
+}
+
+
+.actual-navlinks {
+    position: relative;
+    text-decoration: none;
+    color: #e5dbdb;
+    font-size: 1.35rem;
+    font-weight: 100;
+    font-family: monospace;    position: relative;
+    padding: 10px 0;
+    margin: 0.15rem auto;
+}
+
+.actual-navlinks:hover {
+    color: #644EEF;
+}
+
+/*>?>?>??>?>?>?>?>?>?>?>???>??>?>?>*/
+.js-nav-toggle {
+
+    margin: 0;
+    padding: 0;
+
+    display: flex;
+    justify-content: flex-start;
+    position: absolute;
+    right: 20px;
+
+    background: rgba(106, 106, 255, 0.5);
+}
+
+.active {
+    display: flex;
+    flex-direction: column;
+    justify-content:center
+    ;
+    align-content: center;
+    align-items: center;
+    position: absolute;
+    margin: 0 auto;
+    padding: 0;
+    left: 0;
+    right: 0;
+    visibility: visible;
+    top: 50px;
+    z-index: 1001;
+    background: rgba(99, 78, 239, 0.959);
+    box-shadow: 0 5px 8px rgba(75, 50, 165, 0.5);
+    margin: 0 1.25rem;
+}
+
+
+
+.innernavlinks{
+    list-style: none;
+    margin: 0.85rem 0;
+}
+
+
+
+.menu-icon {
+    position: relative;
+    margin: 0;
+    padding: 0;
+    width: 28.5px;
+    height: 50px;
+
+    cursor: pointer;
+    z-index: 10;
+
+}
+
+.menu-icon span {
+    position: relative;
+    top: 25px;
+    display: block;
+    width: 27px;
+    height: var(--menuicon_barthiccness);
+    background: var(--menuicon_color);
+    border-top-left-radius: 0.045rem;
+    border-top-right-radius: 0.045rem;
+    border-bottom-left-radius: 0.045rem;
+    border-bottom-right-radius: 0.045rem;
+}
+
+.menu-icon span:before,
+.menu-icon span:after {
+    position: absolute;
+    content: '';
+
+}
+
+.menu-iconspan,
+.menu-icon span:before,
+.menu-icon span:after {
+    width: 27px;
+    height: var(--menuicon_barthiccness);
+    background: var(--menuicon_color);
+    display: block;
+    border-top-left-radius: 0.045rem;
+    border-top-right-radius: 0.045rem;
+    border-bottom-left-radius: 0.045rem;
+    border-bottom-right-radius: 0.045rem;
+}
+
+.menu-icon span:before {
+    margin-top: -12px;
+}
+
+.menu-icon span:after {
+    margin-top: 12px;
+}
+
+.menu-icon span {
+    -webkit-transition-duration: 0s;
+    transition-duration: 0s;
+    -webkit-transition-delay: 0.2s;
+    transition-delay: 0.2s;
+}
+
+.hover span {
+    background-color: rgba(0, 0, 0, 0.0);
+    -webkit-transition-delay: 0.2s;
+    transition-delay: 0.2s;
+}
+
+.menu-icon span:before {
+    -webkit-transition-property: margin, -webkit-transform;
+    transition-property: margin, transform;
+    -webkit-transition-duration: 0.2s;
+    transition-duration: 0.2s;
+    -webkit-transition-delay: 0.2s, 0s;
+    transition-delay: 0.2s, 0s;
+}
+
+.hover span:before {
+    margin-top: 0;
+    -webkit-transform: rotate(45deg);
+    transform: rotate(45deg);
+    -webkit-transition-delay: 0s, 0.2s;
+    transition-delay: 0s, 0.2s;
+}
+
+.menu-icon span:after {
+    -webkit-transition-property: margin, -webkit-transform;
+    transition-property: margin, transform;
+    -webkit-transition-duration: 0.2s;
+    transition-duration: 0.2s;
+    -webkit-transition-delay: 0.2s, 0s;
+    transition-delay: 0.2s, 0s;
+}
+
+.hover span:after {
+    margin-top: 0;
+    -webkit-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+    -webkit-transition-delay: 0s, 0.2s;
+    transition-delay: 0s, 0.2s;
+    /***************************************************/
+}
+
+
+
+
+
+
+
+
+/**********************************/
+
+
+
+
+/*>?>?>??>?>?>?>?>?>?>?>???>??>?>?>*/
+
+/*--[==-=--==-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=--=-=*/
+@media screen and (min-width:740px) {
+    .actual-navlinks {
+        position: relative;
+        text-decoration: none;
+        color: #6b7c93;
+        font-size: 1.35rem;
+        font-weight: 100;
+        font-family: monospace;
+    }
+    
+    .actual-navlinks:hover {
+        color: #644EEF;
+    }
+    
+    .js-nav-toggle {
+        display: none;
+    }
+
+    .active {
+        display: none;
+        all: initial;
+    }
+
+    .outernavlinks {
+        position: relative;
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        justify-content: flex-end;
+
+
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        min-width: 0;
+        overflow: hidden;
+    }
+
+    .innernavlinks {
+        position: relative;
+        list-style: none;
+        margin: 0;
+        display: block;
+        padding: 0;
+
+    }
+
+
+    @media screen and (min-width:1090px) {
+
+        .innernavlinks {
+            position: relative;
+            list-style: none;
+            margin: 0 0 0 4.5rem;
+            display: block;
+            padding: 0;
+
+        }
+
+        .outerNav {
+            margin: 0 auto;
+            padding: 0;
+
+
+            top: 0;
+            left: 0;
+            max-width: 100%;
+            min-height: 10px;
+            max-height: 250px;
+
+        }
+
+        .innerNav {
+            position: relative;
+            margin: 0 auto;
+            padding: 0;
+            max-width: 1200px;
+            height: 75px;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-items: center;
+
+
+        }
+
+        .mobileMenu {
+            position: relative;
+            margin: 0;
+            padding: 0;
+            height: 35px;
+            width: 100%;
+
+
+        }
+
+        .innerNav a {
+
+            position: relative;
+            top: 0;
+            left: 0;
+            margin: 0;
+            padding: 0;
+            max-height: 95%;
+            height: 45px;
+        }
+
+
+        .mistsodalogo {
+
+            position: relative;
+            display: inline-block;
+            width: 110px;
+            height: auto;
+            margin: 0 auto;
+            padding: 0;
+        }
+
+
+
+        .footerlist {
+
+            margin: 0 auto;
+            padding: 0;
+            width: 100%;
+            position: relative;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            list-style-type: none;
+
+
+        }
+
+        .footerlist li {
+            margin: 0;
+            padding: 17.5px 0 0 10px;
+        }
+
+        .footerlist li a {
+            font-size: 16.5px;
+        }
+    }
